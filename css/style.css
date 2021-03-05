@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Muli';
+  font-family: 'Mulish', sans-serif;
   color: #333333;
 }
 
@@ -55,7 +55,9 @@ img {
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .logo {
@@ -182,6 +184,13 @@ img {
   }
   .container {
     max-width: 320px;
+    max-height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 280px;
     max-height: 70px;
   }
 }
