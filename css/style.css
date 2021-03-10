@@ -173,9 +173,6 @@ body {
     height: 1px;
     background-color: #333333;
   }
-  .stars {
-    flex-basis: auto;
-  }
   .hotel-name {
     flex-basis: 100%;
   }
@@ -195,6 +192,15 @@ body {
   .hotel-info__offer {
     order: -1;
     margin-left: 0 !important;
+    margin-top: 0;
+  }
+  .stars {
+    flex-basis: 0 !important;
+    margin-right: 16px;
+    min-width: 48px;
+  }
+  .stars__img {
+    margin-right: 2px;
   }
 }
 
@@ -219,6 +225,15 @@ body {
   }
   .logo {
     height: 14px;
+  }
+  .hotel-info__name {
+    margin-top: 10px !important;
+  }
+  .hotel-info__offer {
+    margin-top: 0;
+  }
+  .hotel-wrapper {
+    align-items: center;
   }
 }
 
@@ -281,15 +296,20 @@ body {
   align-items: center;
 }
 
-.hotel-description {
-  font-size: 12px;
-  line-height: 15px;
-}
-
 .stars {
   display: flex;
   flex-basis: 100%;
   max-height: 8px;
+  min-width: 48px;
+}
+
+.stars__img {
+  margin-right: 2px;
+}
+
+.stars-description {
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .offer {
