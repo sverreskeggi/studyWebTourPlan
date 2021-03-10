@@ -47,6 +47,7 @@
 				height: 1px
 				background-color: $text-color
 	.hotel
+		padding-top: 0
 		&-name
 			flex-basis: 100%
 		&-wrapper
@@ -72,10 +73,16 @@
 
 @media (max-width: 576px)
 	.logo
-		width: 99px
+		max-width: 99px
+		&__image
+			width: 100%
 	.container
 		max-width: 320px
 		max-height: 70px
+	.hotel
+		&-info
+			&__description
+				font-size: 12px
 
 @media (max-width: 320px)
 	.container
