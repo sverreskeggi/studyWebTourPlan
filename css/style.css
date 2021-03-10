@@ -287,7 +287,9 @@ body {
 }
 
 .stars {
+  display: flex;
   flex-basis: 100%;
+  max-height: 8px;
 }
 
 .offer {
@@ -316,5 +318,9 @@ body {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+}
+
+.rating__counter-max {
+  font-size: 10px;
 }
 /*# sourceMappingURL=style.css.map */
