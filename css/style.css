@@ -161,6 +161,7 @@ body {
 
 .hotel-info__description {
   margin: 0;
+  font-size: 12px;
 }
 
 .hotel-name {
