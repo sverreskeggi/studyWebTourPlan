@@ -1,3 +1,5 @@
+'use strict';
+
 const swiper = new Swiper('.swiper-container', {
   // Optional parameters
   direction: 'horizontal',
@@ -14,6 +16,13 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.slider-button--prev',
   },
 
+  effect: 'cube',
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  
   // And if we need scrollbar
   // scrollbar: {
   //   el: '.swiper-scrollbar',
