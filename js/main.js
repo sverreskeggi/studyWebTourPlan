@@ -16,13 +16,13 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.slider-button--prev',
   },
 
-  effect: 'cube',
+  effect: 'coverflow',
 
   keyboard: {
     enabled: true,
     onlyInViewport: false,
   },
-  
+
   // And if we need scrollbar
   // scrollbar: {
   //   el: '.swiper-scrollbar',
