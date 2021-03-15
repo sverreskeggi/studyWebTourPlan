@@ -28,11 +28,17 @@
 	.search
 		&__input
 			max-width: 340px			
+	.slider
+		width: 100%
+
+@media (max-width: 768px)
+	.container
+		margin-left: 34px
+		margin-right: 34px	
 
 @media (max-width: 767px)
 	.container
-		max-width: 576px
-		width: 92%
+		// max-width: 576px
 	.navbar
 		&__search, &-menu, &__user
 			display: none
@@ -70,6 +76,8 @@
 				order: -1
 				margin-left: 0 !important
 				margin-top: 0
+	.hotel-grid
+		width: 100%
 	.stars
 		flex-basis: 0 !important
 		margin-right: 16px
@@ -85,8 +93,8 @@
 		&__image
 			width: 100%
 	.container
-		max-width: 320px
-		max-height: 70px
+		// max-width: 320px
+		// max-height: 70px
 	.hotel
 		&-info
 			&__description
@@ -95,8 +103,10 @@
 			margin-top: 5px
 @media (max-width: 320px)
 	.container
-		max-width: 280px
-		max-height: 70px
+		// max-width: 280px
+		margin-left: 20px
+		margin-right: 20px
+		// max-height: 70px
 	.navbar-top
 			padding-top: 28px
 			padding-bottom: 28px
@@ -110,3 +120,8 @@
 				margin-top: 0
 		&-wrapper
 			align-items: center
+	.slider
+		height: 179px
+		width: 279px
+	.swiper-container
+		height: 100%
