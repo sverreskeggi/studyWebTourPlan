@@ -28,3 +28,19 @@ const swiper = new Swiper('.swiper-container', {
   //   el: '.swiper-scrollbar',
   // },
 });
+
+const yandexMapInit = () => {
+  const myMap = new ymaps.Map("map", {
+    center: [60.177343, 24.951565],
+    zoom: 16
+})
+  const place = new ymaps.Placemark([60.177343, 24.951565], {
+  hintContent: 'Hilton Hotel',
+  balloonContent: 'Welcome to Hilton Hotel'
+});
+  myMap.geoObjects.add(place);
+};
+
+
+
+ymaps.ready(yandexMapInit);
