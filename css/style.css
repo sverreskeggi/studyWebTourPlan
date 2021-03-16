@@ -13,6 +13,10 @@ body {
   margin: auto;
 }
 
+.booking {
+  font-family: 'Nunito', sans-serif;
+}
+
 .navbar {
   background-color: #ffffff;
 }
