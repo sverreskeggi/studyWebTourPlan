@@ -469,7 +469,7 @@ body {
 
 @media (max-width: 767px) {
   .container {
-    max-width: 700px;
+    max-width: 95%;
     margin: auto;
   }
   .navbar__search, .navbar-menu, .navbar__user {
@@ -549,6 +549,9 @@ body {
   }
   .logo__image {
     width: 100%;
+  }
+  .container {
+    max-width: 95%;
   }
   .hotel-info__description {
     font-size: 12px;
