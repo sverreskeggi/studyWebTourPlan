@@ -13,6 +13,10 @@ body {
   margin: auto;
 }
 
+.booking {
+  font-family: 'Nunito', sans-serif;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -463,14 +467,11 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .container {
-    margin-left: 34px;
-    margin-right: 34px;
-  }
-}
-
 @media (max-width: 767px) {
+  .container {
+    max-width: 700px;
+    margin: auto;
+  }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
@@ -565,8 +566,8 @@ body {
 
 @media (max-width: 320px) {
   .container {
-    margin-left: 20px;
-    margin-right: 20px;
+    max-width: 280px;
+    margin: auto;
   }
   .navbar-top {
     padding-top: 28px;
