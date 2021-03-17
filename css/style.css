@@ -553,6 +553,9 @@ body {
   .container {
     max-width: 95%;
   }
+  .hotel-grid {
+    margin-top: 18px;
+  }
   .hotel-info__description {
     font-size: 12px;
   }
@@ -588,12 +591,21 @@ body {
   .hotel-wrapper {
     align-items: center;
   }
+  .hotel-right {
+    min-height: 0;
+  }
   .slider {
     height: 179px;
     width: 279px;
   }
   .swiper-container {
     height: 100%;
+  }
+  .map {
+    height: 172px;
+  }
+  .booking {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
