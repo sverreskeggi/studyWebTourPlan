@@ -595,5 +595,11 @@ body {
   .swiper-container {
     height: 100%;
   }
+  .map {
+    height: 172px;
+  }
+  .booking {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
