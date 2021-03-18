@@ -413,6 +413,7 @@ body {
   padding: 98px 0 87px 0;
   background-image: url(../img/newsletter-background.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -466,6 +467,7 @@ body {
   height: 100%;
   border: none;
   padding-left: 33px;
+  padding-right: 75px;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -499,7 +501,8 @@ body {
   .logo__image {
     width: 100%;
   }
-  .container {
+  .container,
+  .newsletter-wrapper {
     max-width: 700px;
   }
   .navbar-top {
@@ -540,6 +543,9 @@ body {
   }
   .map {
     width: 340px;
+  }
+  .map__frame {
+    width: 100%;
   }
 }
 
@@ -617,6 +623,12 @@ body {
   .slider {
     height: 350px;
   }
+  .newsletter-wrapper {
+    max-width: 576px;
+    width: 95%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 576px) {
@@ -640,6 +652,15 @@ body {
   }
   .slider {
     height: 250px;
+  }
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
+  .newsletter__title {
+    margin-bottom: 37px;
+  }
+  .subscribe {
+    width: 100%;
   }
 }
 
