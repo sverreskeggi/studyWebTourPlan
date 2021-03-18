@@ -472,6 +472,17 @@ body {
   line-height: 18px;
 }
 
+.subscribe__button {
+  position: absolute;
+  min-width: 65px;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border: none;
+  background-color: #EC1F46;
+  color: #ffffff;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
