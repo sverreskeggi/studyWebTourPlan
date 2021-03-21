@@ -754,7 +754,7 @@ body {
   }
   .card {
     width: 340px;
-    height: 230px;
+    height: 250px;
   }
 }
 
@@ -947,8 +947,14 @@ body {
     font-size: 18px;
     line-height: 23px;
   }
+  .activities__title {
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 23px;
+  }
   .card {
-    width: 100%;
+    width: 280px;
+    height: 255px;
   }
 }
 /*# sourceMappingURL=style.css.map */
