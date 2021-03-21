@@ -451,7 +451,8 @@ body {
 }
 
 .subscribe {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
   width: 355px;
   height: 55px;
   border-radius: 4px;
@@ -459,9 +460,7 @@ body {
 }
 
 .subscribe__input {
-  position: absolute;
   width: 100%;
-  height: 100%;
   border: none;
   padding-left: 33px;
   padding-right: 75px;
@@ -472,12 +471,9 @@ body {
 }
 
 .subscribe__button {
-  position: absolute;
   max-width: 65px;
-  overflow: hidden;
   right: 0;
   top: 0;
-  height: 100%;
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
@@ -804,9 +800,6 @@ body {
   }
   .newsletter__title {
     margin-bottom: 37px;
-  }
-  .subscribe {
-    width: 100%;
   }
 }
 
