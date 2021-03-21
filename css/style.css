@@ -750,6 +750,10 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
@@ -764,12 +768,12 @@ body {
   }
   .reviews-slider__button--prev {
     left: 50%;
-    margin-left: -65px;
+    margin-left: -90px;
     transform: translate(-50%, 0);
   }
   .reviews-slider__button--next {
     right: 50%;
-    margin-right: -65px;
+    margin-right: -90px;
     transform: translate(50%, 0);
   }
 }
@@ -838,6 +842,10 @@ body {
   }
   .booking {
     margin-bottom: 20px;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 /*# sourceMappingURL=style.css.map */
