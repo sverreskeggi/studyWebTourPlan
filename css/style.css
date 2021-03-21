@@ -454,7 +454,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 355px;
-  height: 55px;
+  min-height: 55px;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -475,6 +475,7 @@ body {
   right: 0;
   top: 0;
   border: none;
+  word-wrap: break-word;
   background-color: #EC1F46;
   color: #ffffff;
 }
@@ -800,6 +801,9 @@ body {
   }
   .newsletter__title {
     margin-bottom: 37px;
+  }
+  .subscribe {
+    width: 280px;
   }
 }
 
