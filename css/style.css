@@ -541,6 +541,8 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  z-index: 99;
+  outline: none;
 }
 
 .reviews-slider__button--prev {
