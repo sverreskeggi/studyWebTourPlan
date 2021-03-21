@@ -196,7 +196,6 @@ body {
 .hotel-slider {
   width: 728px;
   height: 450px;
-  margin-right: 30px;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
@@ -213,6 +212,12 @@ body {
   right: 0;
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   z-index: 10;
+}
+
+.hotel-slider__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hotel-slider__button {
@@ -238,10 +243,6 @@ body {
 .hotel-slider__button--next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
-}
-
-.hotel-slider__image {
-  object-fit: cover;
 }
 
 .stars {
