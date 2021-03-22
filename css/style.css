@@ -620,6 +620,7 @@ body {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 57px;
 }
 
@@ -706,6 +707,9 @@ body {
   .hotel {
     margin-bottom: 70px;
   }
+  .reviews {
+    margin-bottom: 70px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -779,6 +783,9 @@ body {
   }
   .map__frame {
     width: 100%;
+  }
+  .reviews {
+    margin-bottom: 50px;
   }
   .reviews__title {
     font-size: 30px;
@@ -882,6 +889,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
+  .reviews {
+    margin-bottom: 50px;
+  }
   .reviews__title {
     font-size: 30px;
     line-height: 38px;
@@ -968,6 +978,15 @@ body {
   }
 }
 
+@media (max-width: 450px) {
+  .card {
+    height: auto;
+  }
+  .card__button {
+    font-size: 10px;
+  }
+}
+
 @media (max-width: 320px) {
   .container {
     max-width: 280px;
@@ -1017,6 +1036,9 @@ body {
   .subscribe__input {
     padding-left: 20px;
   }
+  .reviews {
+    margin-bottom: 50px;
+  }
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
@@ -1025,6 +1047,9 @@ body {
   }
   .reviews-slider__text {
     text-align: left;
+  }
+  .reviews-slider__item {
+    padding-bottom: 36px;
   }
   .activities__title {
     margin-bottom: 36px;
@@ -1058,6 +1083,12 @@ body {
   }
   .card:nth-child(4) .card__title {
     width: 200px;
+  }
+  .card__title {
+    max-width: 200px;
+  }
+  .card__button {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

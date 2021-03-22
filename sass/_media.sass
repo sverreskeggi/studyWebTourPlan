@@ -1,6 +1,8 @@
 @media (min-width: 1201px)
 	.hotel
 		margin-bottom: 70px
+	.reviews
+		margin-bottom: 70px
 @media (max-width: 1200px)
 	.container
 		max-width: 960px
@@ -54,6 +56,7 @@
 		&__frame
 			width: 100%
 	.reviews
+		margin-bottom: 50px
 		&__title
 			font-size: 30px
 			margin-bottom: 50px
@@ -136,6 +139,7 @@
 			flex-direction: column
 			align-items: flex-start
 	.reviews
+		margin-bottom: 50px
 		&__title
 			font-size: 30px;
 			line-height: 38px;
@@ -197,6 +201,11 @@
 	.card
 		&__title
 			max-width: 140px
+@media (max-width: 450px)	
+	.card
+		height: auto
+		&__button
+			font-size: 10px
 @media (max-width: 320px)
 	.container
 		max-width: 280px
@@ -235,6 +244,7 @@
 		&__input
 			padding-left: 20px
 	.reviews
+		margin-bottom: 50px
 		&__title
 			font-size: 18px
 			line-height: 23px
@@ -243,6 +253,8 @@
 		&-slider
 			&__text
 				text-align: left
+			&__item
+				padding-bottom: 36px
 	.activities
 		&__title
 			margin-bottom: 36px
@@ -271,3 +283,7 @@
 			.card
 				&__title
 					width: 200px
+		&__title
+			max-width: 200px
+		&__button
+			font-size: 12px
