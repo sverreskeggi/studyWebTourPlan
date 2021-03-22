@@ -1002,6 +1002,9 @@ body {
   .booking {
     margin-bottom: 20px;
   }
+  .newsletter-wrapper {
+    width: 280px;
+  }
   .newsletter-title {
     font-size: 20px;
   }
