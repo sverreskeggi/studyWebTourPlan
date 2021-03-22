@@ -441,6 +441,9 @@ body {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  width: 242px;
+  margin: 0;
+  margin-right: 140px;
 }
 
 .newsletter-title__strong {
@@ -452,7 +455,6 @@ body {
 
 .subscribe {
   display: flex;
-  justify-content: space-between;
   width: 355px;
   min-height: 55px;
   border-radius: 4px;
@@ -460,7 +462,7 @@ body {
 }
 
 .subscribe__input {
-  width: 100%;
+  width: 285px;
   border: none;
   padding-left: 33px;
   padding-right: 75px;
@@ -471,10 +473,11 @@ body {
 }
 
 .subscribe__button {
-  max-width: 65px;
+  width: 65px;
   right: 0;
   top: 0;
   border: none;
+  border-radius: 0 4px 4px 0;
   word-wrap: break-word;
   background-color: #EC1F46;
   color: #ffffff;
@@ -491,6 +494,7 @@ body {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 70px;
 }
 
@@ -575,6 +579,7 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: #EC1F46;
+  margin: 0;
   margin-bottom: 10px;
 }
 
@@ -677,6 +682,22 @@ body {
   cursor: pointer;
 }
 
+.card:nth-child(1) .card__title {
+  width: 145px;
+}
+
+.card:nth-child(2) .card__title {
+  width: 150px;
+}
+
+.card:nth-child(3) .card__title {
+  width: 160px;
+}
+
+.card:nth-child(4) .card__title {
+  width: 200px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -745,6 +766,12 @@ body {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .reviews-slider__title {
+    font-size: 30px;
+  }
+  .reviews-slider__text {
+    max-width: 455px;
   }
   .activities-wrapper {
     flex-wrap: wrap;
@@ -903,9 +930,18 @@ body {
   .subscribe {
     width: 280px;
   }
+  .subscribe__input {
+    min-width: 215px;
+  }
+  .subscribe__button {
+    min-width: 65px;
+  }
   .card {
     width: 49%;
     height: 200px;
+  }
+  .card__image {
+    height: 100%;
   }
 }
 
@@ -947,6 +983,9 @@ body {
     font-size: 18px;
     line-height: 23px;
   }
+  .reviews-slider__text {
+    text-align: left;
+  }
   .activities__title {
     margin-bottom: 36px;
     font-size: 18px;
@@ -955,6 +994,30 @@ body {
   .card {
     width: 280px;
     height: 255px;
+  }
+  .card:nth-child(1) {
+    order: 0;
+  }
+  .card:nth-child(1) .card__title {
+    width: 145px;
+  }
+  .card:nth-child(2) {
+    order: 2;
+  }
+  .card:nth-child(2) .card__title {
+    width: 150px;
+  }
+  .card:nth-child(3) {
+    order: 1;
+  }
+  .card:nth-child(3) .card__title {
+    width: 160px;
+  }
+  .card:nth-child(4) {
+    order: 3;
+  }
+  .card:nth-child(4) .card__title {
+    width: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
