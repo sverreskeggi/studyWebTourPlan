@@ -45,10 +45,19 @@
 		width: 340px
 		&__frame
 			width: 100%
+	.newsletter
+		&-wrapper
+			max-width: 700px
+		&__title
+			margin-right: 108px
 	.reviews
 		&-slider
 			&__item
 				max-width: 580px
+			&__title
+				font-size: 30px
+			&__text
+				max-width: 455px
 @media (max-width: 767px)
 	.container
 		max-width: 95%
@@ -114,6 +123,8 @@
 			width: 95%
 			flex-direction: column
 			align-items: flex-start
+		&__title
+			margin-bottom: 37px
 	.reviews
 		&__title
 			font-size: 30px;
@@ -158,7 +169,10 @@
 			margin-bottom: 37px
 	.subscribe
 		width: 280px
-
+		&__input
+			min-width: 215px
+		&__button
+			min-width: 65px
 @media (max-width: 320px)
 	.container
 		max-width: 280px
@@ -185,7 +199,19 @@
 		height: 172px
 	.booking
 		margin-bottom: 20px
+	.newsletter
+		&-title
+			font-size: 20px
+			margin-left: 13px
+			&__strong
+				font-size: 30px
+		&__subscribe
+			width: 280px
+			margin-left: 13px
 	.reviews
 		&__title
 			font-size: 18px;
 			line-height: 23px;
+		&-slider
+			&__text
+				text-align: left

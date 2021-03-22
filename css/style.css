@@ -441,6 +441,9 @@ body {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  width: 242px;
+  margin: 0;
+  margin-right: 140px;
 }
 
 .newsletter-title__strong {
@@ -452,7 +455,6 @@ body {
 
 .subscribe {
   display: flex;
-  justify-content: space-between;
   width: 355px;
   min-height: 55px;
   border-radius: 4px;
@@ -460,7 +462,7 @@ body {
 }
 
 .subscribe__input {
-  width: 100%;
+  width: 285px;
   border: none;
   padding-left: 33px;
   padding-right: 75px;
@@ -471,10 +473,11 @@ body {
 }
 
 .subscribe__button {
-  max-width: 65px;
+  width: 65px;
   right: 0;
   top: 0;
   border: none;
+  border-radius: 0 4px 4px 0;
   word-wrap: break-word;
   background-color: #EC1F46;
   color: #ffffff;
@@ -491,6 +494,7 @@ body {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 70px;
 }
 
@@ -575,6 +579,7 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: #EC1F46;
+  margin: 0;
   margin-bottom: 10px;
 }
 
@@ -663,8 +668,20 @@ body {
   .map__frame {
     width: 100%;
   }
+  .newsletter-wrapper {
+    max-width: 700px;
+  }
+  .newsletter__title {
+    margin-right: 108px;
+  }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .reviews-slider__title {
+    font-size: 30px;
+  }
+  .reviews-slider__text {
+    max-width: 455px;
   }
 }
 
@@ -748,6 +765,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
+  .newsletter__title {
+    margin-bottom: 37px;
+  }
   .reviews__title {
     font-size: 30px;
     line-height: 38px;
@@ -805,6 +825,12 @@ body {
   .subscribe {
     width: 280px;
   }
+  .subscribe__input {
+    min-width: 215px;
+  }
+  .subscribe__button {
+    min-width: 65px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -841,9 +867,23 @@ body {
   .booking {
     margin-bottom: 20px;
   }
+  .newsletter-title {
+    font-size: 20px;
+    margin-left: 13px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+  }
+  .newsletter__subscribe {
+    width: 280px;
+    margin-left: 13px;
+  }
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
