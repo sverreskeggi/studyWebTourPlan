@@ -191,9 +191,12 @@
 	.card
 		width: 49%
 		height: 200px
-		&__title
 		&__image
 			height: 100%
+@media (max-width: 500px)
+	.card
+		&__title
+			max-width: 140px
 @media (max-width: 320px)
 	.container
 		max-width: 280px

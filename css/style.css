@@ -962,6 +962,12 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .card__title {
+    max-width: 140px;
+  }
+}
+
 @media (max-width: 320px) {
   .container {
     max-width: 280px;
