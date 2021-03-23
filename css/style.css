@@ -5,7 +5,7 @@
 body {
   font-family: 'Mulish', sans-serif;
   color: #333333;
-  background-color: #f5fafe;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -40,7 +40,7 @@ body {
 }
 
 .navbar-bottom {
-  background-color: #0a223d;
+  background-color: #0A223D;
 }
 
 .navbar-menu {
@@ -294,7 +294,7 @@ body {
 }
 
 .booking {
-  background-color: #0a223d;
+  background-color: #0A223D;
   color: #ffffff;
   border-radius: 8px;
   width: 350px;
@@ -701,6 +701,44 @@ body {
 
 .card:nth-child(4) .card__title {
   width: 200px;
+}
+
+.footer {
+  background-color: #0A223D;
+  color: #ffffff;
+  padding-top: 108px;
+  padding-bottom: 46px;
+}
+
+.footer-wrapper {
+  display: grid;
+}
+
+.footer__ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 16px 0;
+}
+
+.footer__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (min-width: 1201px) {
