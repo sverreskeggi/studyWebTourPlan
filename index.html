@@ -663,10 +663,10 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title">Send us a message</h3>
-            <form action="#" class="footer__form">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*">
-              <input type="text" class="input footer__input" placeholder="Phone Number*">
-              <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
+            <form action="./php/send.php" method="POST" class="footer__form">
+              <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*">
+              <input name="phone" type="text" class="input footer__input" placeholder="Phone Number*">
+              <textarea name="message" class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
