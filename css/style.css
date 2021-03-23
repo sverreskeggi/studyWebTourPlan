@@ -62,6 +62,10 @@ body {
   line-height: 15px;
 }
 
+.navbar-menu__item--mobile--visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
@@ -1045,12 +1049,50 @@ body {
 }
 
 @media (max-width: 767px) {
+  body {
+    padding-top: 78px;
+  }
+  .navbar--mobile--fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
+    display: none;
+  }
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
+    display: flex;
+  }
+  .navbar__user {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    top: 78px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 30px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
+  }
   .container {
     max-width: 95%;
     margin: auto;
-  }
-  .navbar__search, .navbar-menu, .navbar__user {
-    display: none;
   }
   .menu-button {
     display: flex;
@@ -1068,6 +1110,14 @@ body {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name {
+    padding: 0;
+  }
+  .user__name--light {
+    color: #ffffff;
+    margin-left: 0;
+    margin-top: 10px;
   }
   .hotel {
     padding-top: 0;
@@ -1261,6 +1311,9 @@ body {
 }
 
 @media (max-width: 500px) {
+  .navbar__search {
+    width: 300px;
+  }
   .card__title {
     max-width: 140px;
   }
@@ -1279,6 +1332,9 @@ body {
   .container {
     max-width: 280px;
     margin: auto;
+  }
+  .navbar__search {
+    width: 245px;
   }
   .navbar-top {
     padding-top: 28px;
