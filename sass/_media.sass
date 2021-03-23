@@ -107,9 +107,19 @@
 				grid-column: span 5
 				grid-row: 3
 			&-form
-				width: 539px
 				grid-column: span 5
 				grid-row: 4
+		&__disclaimer
+			display: flex
+			justify-content: space-between
+			margin-left: 80px
+			&-links
+				width: 283px
+				margin-right: 0
+			&-image
+				width: 136px
+				height: 22px
+				margin-right: 166px
 	.footer-paragraph
 		margin: 0
 @media (max-width: 767px)
@@ -205,6 +215,20 @@
 	.card
 		width: 49%
 		height: 255px
+	.footer
+		padding-top: 69px
+		&-wrapper
+			grid-template-columns: repeat(6, 1fr)
+		&__disclaimer
+			display: flex
+			justify-content: space-between
+			margin-left: 10px
+			&-links
+				width: 283px
+				margin-right: 10px
+			&-image
+				width: 136px
+				margin-right: 135px
 @media (max-width: 576px)
 	.logo
 		max-width: 99px
@@ -262,7 +286,8 @@
 			&-form
 				grid-row: 7
 				grid-column: 1
-
+		&__input
+			flex-basis: 100%
 @media (max-width: 500px)
 	.card
 		&__title
@@ -353,3 +378,30 @@
 			max-width: 200px
 		&__button
 			font-size: 12px
+	.footer
+		padding-bottom: 21px
+		&-wrapper
+			margin-bottom: 30px
+		&__contact
+			&-form
+				flex-direction: column
+				width: 280px
+		&__input
+			order: -1
+		&__info
+			order: 0
+			flex-basis: 100%
+			margin-bottom: 15px
+		&__button
+			order: 1
+		&__disclaimer
+			flex-wrap: wrap
+			margin-bottom: 30px
+			margin-left: 21px
+			&-links
+				display: flex
+				justify-content: space-between
+				margin-bottom: 10px
+			&-image
+				width: 136px
+				height: 22px
