@@ -936,6 +936,18 @@ body {
   .reviews {
     margin-bottom: 70px;
   }
+  .footer {
+    padding-top: 105px;
+  }
+  .footer-wrapper {
+    grid-template-columns: 1fr 1fr 319px 205px;
+  }
+  .footer__title {
+    margin: 0 0 17px 0;
+  }
+  .footer__social-links {
+    margin-left: 40px;
+  }
 }
 
 @media (max-width: 1200px) {
