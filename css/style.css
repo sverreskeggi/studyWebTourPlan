@@ -1537,7 +1537,11 @@ body {
     padding-bottom: 21px;
   }
   .footer-wrapper {
+    grid-row-gap: 35px;
     margin-bottom: 30px;
+  }
+  .footer__contact-details {
+    margin-top: 0;
   }
   .footer__contact-form {
     flex-direction: column;
@@ -1567,6 +1571,36 @@ body {
   .footer__disclaimer-image {
     width: 136px;
     height: 22px;
+  }
+  .footer__logo {
+    height: 108px;
+    margin-top: 0px;
+  }
+  .footer__social-network {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__social-links {
+    display: block;
+  }
+  .footer__legal {
+    grid-row: 3;
+  }
+  .footer__additional {
+    grid-row: 4;
+  }
+  .footer__categories {
+    grid-row: 5;
+  }
+  .footer__title--inline {
+    margin-left: 0;
+  }
+  .footer__title--mb-3 {
+    margin-bottom: 35px;
+  }
+  .footer__title--mb-37 {
+    margin-bottom: 6px;
   }
 }
 /*# sourceMappingURL=style.css.map */
