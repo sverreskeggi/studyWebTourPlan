@@ -943,7 +943,10 @@ body {
     grid-template-columns: 1fr 1fr 319px 205px;
   }
   .footer__title {
-    margin: 0 0 17px 0;
+    margin: 0 0 21px 0;
+  }
+  .footer__title--mt-6 {
+    margin-top: 12px;
   }
   .footer__social-links {
     margin-left: 40px;
