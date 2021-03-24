@@ -1117,8 +1117,33 @@ body {
     height: 22px;
     margin-right: 166px;
   }
+  .footer-wrapper {
+    margin-bottom: 65px;
+  }
   .footer-paragraph {
     margin: 0;
+  }
+  .footer__social-network {
+    margin-top: 30px;
+  }
+  .footer__title {
+    margin-bottom: 15px;
+  }
+  .footer__title--mb-37 {
+    height: 37px;
+  }
+  .footer__contact-details {
+    margin-top: 23px;
+  }
+  .footer__contact-form {
+    margin-top: 22px;
+    width: 542px;
+  }
+  .footer__disclaimer {
+    margin-left: 56px;
+  }
+  .footer__disclaimer-image {
+    margin-right: 29px;
   }
 }
 
