@@ -666,7 +666,7 @@
             <form action="./php/send.php" method="POST" class="footer__form">
               <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*">
               <input name="phone" type="text" class="input footer__input" placeholder="Phone Number*">
-              <textarea name="message" class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
+              <textarea name="message" class="message footer__message" cols="30" rows="10" placeholder="Message"></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
@@ -689,7 +689,18 @@
     <div class="modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
-      <div class="modal__dialog"></div>
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="./img/modal-close-icon.svg" alt="Icon: close modal window" srcset="">
+        </a>
+        <form action="./php/send.php" method="POST" class="modal__form">
+          <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*">
+          <input name="phone" type="text" class="input modal__input" placeholder="Phone Number*">
+          <textarea name="message" class="message modal__message" cols="30" rows="10" placeholder="Message"></textarea>
+          <button class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
