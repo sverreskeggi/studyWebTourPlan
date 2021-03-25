@@ -4,6 +4,8 @@ document.querySelector('.menu-button')
   .addEventListener('click', () => {
     document.querySelector('.navbar-bottom')
       .classList.toggle('navbar-bottom--visible');
+    document.querySelector('body')
+      .classList.toggle('scroll-hidden');
 })
 
 const mainSlider = new Swiper('.hotel-slider', {

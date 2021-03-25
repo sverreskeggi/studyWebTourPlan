@@ -50,6 +50,10 @@ body {
   cursor: pointer;
 }
 
+.scroll-hidden {
+  overflow: hidden;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -1171,7 +1175,7 @@ body {
   .navbar-bottom {
     display: none;
     position: fixed;
-    top: 78px;
+    top: 70px;
     right: 0;
     left: 0;
     bottom: 0;
