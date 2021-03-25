@@ -937,6 +937,21 @@ body {
   margin-bottom: 15px;
 }
 
+.send-message-status {
+  margin-bottom: 10px;
+}
+
+.send-message-info {
+  margin-bottom: 30px;
+}
+
+.send-message-button {
+  display: block;
+  width: 150px;
+  text-decoration: none;
+  text-align: center;
+}
+
 @media (min-width: 1201px) {
   .hotel {
     margin-bottom: 70px;
