@@ -1424,6 +1424,9 @@ body {
   .card__title {
     max-width: 140px;
   }
+  .footer__contact-form {
+    width: 100%;
+  }
 }
 
 @media (max-width: 450px) {
