@@ -54,6 +54,10 @@ body {
   overflow: hidden;
 }
 
+.scroll-modal-on {
+  overflow-y: scroll;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -1438,10 +1442,20 @@ body {
   }
   .navbar__search {
     width: 245px;
+    margin-bottom: 17px;
   }
   .navbar-top {
     padding-top: 28px;
     padding-bottom: 28px;
+  }
+  .navbar-menu {
+    padding-top: 0;
+  }
+  .navbar-menu__item {
+    margin-bottom: 18px;
+  }
+  .user__name {
+    padding-bottom: 7px;
   }
   .logo {
     height: 14px;

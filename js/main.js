@@ -1,11 +1,14 @@
 'use strict';
 
-document.querySelector('.menu-button')
-  .addEventListener('click', () => {
-    document.querySelector('.navbar-bottom')
-      .classList.toggle('navbar-bottom--visible');
-    document.querySelector('body')
-      .classList.toggle('scroll-hidden');
+const navBar = document.querySelector('.navbar-bottom'),
+  menuButton = document.querySelector('.menu-button'),
+  body = document.querySelector('body'),
+  navBarBottom = document.querySelector('.navbar-bottom');
+
+  menuButton.addEventListener('click', () => {
+    body.classList.toggle('scroll-hidden');
+    navBar.classList.toggle('navbar-bottom--visible');
+    navBarBottom.classList.toggle('scroll-modal-on');
 })
 
 const mainSlider = new Swiper('.hotel-slider', {
