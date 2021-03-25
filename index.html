@@ -156,7 +156,7 @@
             </p>
           </div>
           <!-- /.hotel-info__text -->
-          <div class="rating hotel-info__rating">
+          <div data-href="rating-modal" data-toggle="modal" class="rating hotel-info__rating">
             <span class="rating__text">User Ratting</span>
             <span class="rating__counter"
               >4.5/<span class="rating__counter-max">5</span></span
@@ -258,7 +258,7 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-href="booking-modal" data-toggle="modal" class="button booking__button button-modal">View Other Options</button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -687,24 +687,47 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
-    <!-- <div class="modal"> -->
-      <!-- <div class="modal__overlay"></div> -->
+    <div class="modal" id="rating-modal"> -->
+      <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
-      <!-- <div class="modal__dialog"> -->
-        <!-- <a href="#" class="modal__close"> -->
-          <!-- <img src="./img/modal-close-icon.svg" alt="Icon: close modal window" srcset=""> -->
-        <!-- </a> -->
-        <!-- <form action="./php/send.php" method="POST" class="modal__form"> -->
-          <!-- <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*"> -->
-          <!-- <input name="phone" type="text" class="input modal__input" placeholder="Phone Number*"> -->
-          <!-- <textarea name="message" class="message modal__message" cols="30" rows="10" placeholder="Message"></textarea> -->
-          <!-- <button class="button modal__button">Send</button> -->
-          <!-- <span class="modal__info">* Required Fields</span> -->
-        <!-- </form> -->
-      <!-- </div> -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="./img/modal-close-icon.svg" alt="Icon: close modal window" srcset="">
+        </a>
+        <form name="modal-form" action="./php/send.php" method="POST" class="modal__form">
+          <h3 class="modal__title">Booking</h3>
+          <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*">
+          <input name="phone" type="text" class="input modal__input" placeholder="Phone Number*">
+          <input name="email" type="text" class="input modal__input" placeholder="Email*">
+          <textarea name="message" class="message modal__message" cols="30" rows="10" placeholder="Message"></textarea>
+          <button class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
       <!-- /.modal__dialog -->
-    <!-- </div> -->
-    <!-- /.modal -->
+    </div>
+    <!-- <!-- /.modal -->
+    <div class="modal" id="booking-modal"> -->
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="./img/modal-close-icon.svg" alt="Icon: close modal window" srcset="">
+        </a>
+        <form name="modal-form" action="./php/send.php" method="POST" class="modal__form">
+          <h3 class="modal__title">Send us a feedback</h3>
+          <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*">
+          <input name="phone" type="text" class="input modal__input" placeholder="Phone Number*">
+          <input name="email" type="text" class="input modal__input" placeholder="Email*">
+          <textarea name="message" class="message modal__message" cols="30" rows="10" placeholder="Message"></textarea>
+          <button class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- <!-- /.modal -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
