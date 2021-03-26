@@ -1522,7 +1522,7 @@ body {
   }
 }
 
-@media (orientation: landscape) {
+@media (max-width: 570px) and (orientation: landscape) {
   .modal__dialog {
     top: 5%;
     right: 10%;
