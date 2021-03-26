@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <header class="navbar navbar--mobile--fixed">
+    <header id="main-header" class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -546,11 +546,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="./img/footer-logo-icon.svg"
-            alt="Logo: best tour plan"
-            class="logo footer__logo"
-          />
+          <a href="#main-header" class="logo-link">
+            <img
+              src="./img/footer-logo-icon.svg"
+              alt="Logo: best tour plan"
+              class="logo footer__logo"
+            />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -608,9 +610,9 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"><img src="./img/footer-facebook-icon.svg" alt="Icon: facebook"></a>
-              <a href="#" class="footer__link"><img src="./img/footer-youtube-icon.svg" alt="Icon: youtube"></a>
-              <a href="#" class="footer__link"><img src="./img/footer-instagramm-icon.svg" alt="Icon: instagramm"></a>
+              <a href="https://www.facebook.com" class="footer__link"><img src="./img/footer-facebook-icon.svg" alt="Icon: facebook"></a>
+              <a href="https://www.youtube.com" class="footer__link"><img src="./img/footer-youtube-icon.svg" alt="Icon: youtube"></a>
+              <a href="https://www.instagram.com" class="footer__link"><img src="./img/footer-instagramm-icon.svg" alt="Icon: instagramm"></a>
             </div>
             <!-- /.footer__social-links -->
           </div>
@@ -648,16 +650,16 @@
                   <img class="footer__icon" src="./img/footer-call-icon.svg" alt="Icon: phone call">
                 </div>
                 <div class="footer__item-wrapper">
-                  <p class="footer-paragraph">Tel (business hours) : 269 1500</p>
-                  <p class="footer-paragraph">Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)</p>
-                  <p class="footer-paragraph">Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</p>
+                  <p class="footer-paragraph">Tel (business hours) : <a class="phone-link" href="tel:269 1500"><wbr>269 1500<wbr></a></p>
+                  <p class="footer-paragraph">Tel (hotline) Monday - Saturday: <a class="phone-link" href="52-56-61-38"><wbr>52-56-61-38<wbr></a> (08:00 am – 20:00 pm)</p>
+                  <p class="footer-paragraph">Tel (hotline) Sunday: <a class="phone-link" href="52-56-61-38"><wbr>52-56-61-38<wbr></a> (08:00 am – 14:00 pm)</p>
                 </div>
               </li>
               <li class="footer__item footer__item--mb-18">
                 <div class="footer__icon-wrapper">
                   <img class="footer__icon" src="./img/footer-email-icon.svg" alt="Icon: email">
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto:cherly.lawson@example.com" class="mail-link">cherly.lawson@example.com</a>
               </li>
             </ul>
           </div>
@@ -678,16 +680,16 @@
         <!-- /. footer-wrapper -->
         <div class="footer__disclaimer">
           <div class="footer__disclaimer-links">
-            <span>Disclaimer</span>
-            <span>Conditions of use</span>
-            <span>Cancellation policy</span>
+            <a href="#" class="link"><span>Disclaimer</span></a>
+            <a href="#" class="link"><span>Conditions of use</span></a>
+            <a href="#" class="link"><span>Cancellation policy</span></a>
           </div>
           <img class="footer__disclaimer-image" src="./img/footer-image.png" alt="Image: pay mode">
       </div>
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
-    <div class="modal" id="rating-modal"> -->
+    <div class="modal" id="rating-modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
@@ -707,7 +709,7 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- <!-- /.modal -->
-    <div class="modal" id="booking-modal"> -->
+    <div class="modal" id="booking-modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
@@ -726,7 +728,7 @@
       </div>
       <!-- /.modal__dialog -->
     </div>
-    <!-- <!-- /.modal -->
+    <!-- /.modal -->
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>

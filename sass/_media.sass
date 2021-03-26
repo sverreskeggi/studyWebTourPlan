@@ -21,7 +21,7 @@
 			margin-top: 0
 			margin-bottom: 5px
 		&__disclaimer
-			margin-right: 125px
+			// margin-right: 125px
 @media (max-width: 1200px)
 	.container
 		max-width: 960px
@@ -161,6 +161,8 @@
 			margin-left: 56px
 			&-image
 				margin-right: 29px
+		&__text
+			font-size: 14px
 @media (max-width: 767px)
 	body
 		padding-top: 78px
@@ -342,7 +344,7 @@
 	.footer
 		&-wrapper
 			grid-template-columns: 1fr
-		&__logo
+		&__logo, .logo-link
 			grid-row: 1
 			grid-column: 1
 		&__social
@@ -365,8 +367,13 @@
 			&-form
 				grid-row: 7
 				grid-column: 1
+				width: 100%
 		&__input
 			flex-basis: 100%
+		&__title
+			&--imnline
+				margin: 0px 43px 0 0px;
+
 @media (max-width: 500px)
 	.navbar
 		&__search

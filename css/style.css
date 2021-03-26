@@ -58,6 +58,36 @@ body {
   overflow-y: scroll;
 }
 
+.input, .message {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.link, .phone-link, .mail-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
+  text-decoration: none;
+}
+
+.link {
+  margin-right: 5px;
+}
+
+.logo-link {
+  grid-row: 1 / 3;
+  width: 153px;
+}
+
+.wbr {
+  display: inline-block;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -892,7 +922,7 @@ body {
 .footer__disclaimer-image {
   width: 136px;
   height: 22px;
-  margin-right: 166px;
+  margin-right: 160px;
 }
 
 .modal__form {
@@ -1020,9 +1050,6 @@ body {
   .footer-paragraph {
     margin-top: 0;
     margin-bottom: 5px;
-  }
-  .footer__disclaimer {
-    margin-right: 125px;
   }
 }
 
@@ -1206,6 +1233,9 @@ body {
   }
   .footer__disclaimer-image {
     margin-right: 29px;
+  }
+  .footer__text {
+    font-size: 14px;
   }
 }
 
@@ -1438,7 +1468,7 @@ body {
   .footer-wrapper {
     grid-template-columns: 1fr;
   }
-  .footer__logo {
+  .footer__logo, .footer .logo-link {
     grid-row: 1;
     grid-column: 1;
   }
@@ -1465,9 +1495,13 @@ body {
   .footer__contact-form {
     grid-row: 7;
     grid-column: 1;
+    width: 100%;
   }
   .footer__input {
     flex-basis: 100%;
+  }
+  .footer__title--imnline {
+    margin: 0px 43px 0 0px;
   }
 }
 
