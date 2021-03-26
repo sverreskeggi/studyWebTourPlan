@@ -77,10 +77,15 @@ body {
 
 .link {
   margin-right: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
 }
 
 .logo-link {
-  grid-row: 1 / 3;
+  grid-row: 1 / 2;
   width: 153px;
 }
 
@@ -910,11 +915,6 @@ body {
 }
 
 .footer__disclaimer-links {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #FFFFFF;
   margin-bottom: 10px;
   margin-right: 277px;
 }
@@ -953,6 +953,7 @@ body {
   max-width: 478px;
   top: 50%;
   left: 50%;
+  height: 487px;
   transform: translate(-50%, -50%);
   padding: 30px 0px;
   background-color: #0A223D;
@@ -962,6 +963,7 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s;
+  overflow-y: scroll;
 }
 
 .modal__dialog--visible {
@@ -1057,6 +1059,9 @@ body {
   .footer-paragraph {
     margin-top: 0;
     margin-bottom: 5px;
+  }
+  .modal__dialog {
+    overflow-y: scroll;
   }
 }
 
@@ -1517,7 +1522,7 @@ body {
   .footer__input {
     flex-basis: 100%;
   }
-  .footer__title--imnline {
+  .footer__title--inline {
     margin: 0px 43px 0 0px;
   }
 }
