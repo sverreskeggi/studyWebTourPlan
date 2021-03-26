@@ -11,20 +11,36 @@
 	.footer
 		padding-top: 105px
 		&-wrapper
-			grid-template-columns: 1fr 1fr 319px 205px
+			grid-template-columns: 1fr 1fr 314px 205px
+			grid-auto-rows: minmax(22px, min-content)
+		&__legal
+			margin-left: 10px
 		&__title
-			margin: 0 0 30px 0
+			margin: 0 0 18px 0
 			&--mt-18
 				margin-top: 18px
 			&--mb-37
 				margin-bottom: 37px
+		&__item
+			&--mb-2
+				margin-bottom: 12px
+			&--mb-18
+				margin-top: 23px
 		&__social
 			&-links
 				margin-left: 40px
 				margin-bottom: 25px
+			&-network
+				margin-top: -30px
+		&__contact
+			&-details
+				margin-top: 15px
+		&__text
+			margin-bottom: 30px
+			margin-top: 23px
 		&-paragraph
 			margin-top: 0
-			margin-bottom: 5px
+			margin-bottom: -2px
 		&__disclaimer
 			// margin-right: 125px
 	.modal
@@ -140,7 +156,7 @@
 		&__disclaimer
 			display: flex
 			justify-content: space-between
-			margin-left: 80px
+			// margin-left: 80px
 			&-links
 				width: 283px
 				margin-right: 0
@@ -151,6 +167,8 @@
 	.footer
 		&-wrapper
 			margin-bottom: 65px
+		&__legal
+			grid-column: 5
 		&-paragraph
 			margin: 0
 		&__social
@@ -167,9 +185,10 @@
 				margin-top: 22px
 				width: 542px
 		&__disclaimer
-			margin-left: 56px
+			// margin-left: 56px
 			&-image
-				margin-right: 29px
+				margin-left: 0
+				margin-right: 0
 		&__text
 			font-size: 14px
 @media (max-width: 767px)
@@ -315,7 +334,7 @@
 			margin-left: 10px
 			&-links
 				width: 283px
-				margin-right: 10px
+				// margin-right: 10px
 			&-image
 				width: 136px
 				margin-right: 135px
@@ -389,7 +408,10 @@
 			flex-basis: 100%
 		&__title
 			&--inline
-				margin: 0px 43px 0 0px;
+				margin: 0px 43px 0 0px
+		&__disclaimer
+			&-links
+				margin-bottom: 10px
 	.modal
 		&__dialog
 			overflow: scroll
@@ -567,6 +589,11 @@
 				flex-direction: column
 			&-links
 				display: block
+				display: flex
+				align-items: center
+				justify-content: flex-start
+		&__link
+			margin-right: 10px
 		&__legal
 			grid-row: 3
 		&__additional
@@ -576,6 +603,7 @@
 		&__title
 			&--inline
 				margin-left: 0
+				margin-bottom: 20px
 			&--mb-3
 				margin-bottom: 35px
 			&--mb-37

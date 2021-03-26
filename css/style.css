@@ -911,18 +911,12 @@ body {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  margin-left: 21px;
-}
-
-.footer__disclaimer-links {
-  margin-bottom: 10px;
-  margin-right: 277px;
 }
 
 .footer__disclaimer-image {
   width: 136px;
   height: 22px;
-  margin-right: 160px;
+  margin-left: 277px;
 }
 
 .modal__form {
@@ -1047,10 +1041,14 @@ body {
     padding-top: 105px;
   }
   .footer-wrapper {
-    grid-template-columns: 1fr 1fr 319px 205px;
+    grid-template-columns: 1fr 1fr 314px 205px;
+    grid-auto-rows: minmax(22px, min-content);
+  }
+  .footer__legal {
+    margin-left: 10px;
   }
   .footer__title {
-    margin: 0 0 30px 0;
+    margin: 0 0 18px 0;
   }
   .footer__title--mt-18 {
     margin-top: 18px;
@@ -1058,13 +1056,29 @@ body {
   .footer__title--mb-37 {
     margin-bottom: 37px;
   }
+  .footer__item--mb-2 {
+    margin-bottom: 12px;
+  }
+  .footer__item--mb-18 {
+    margin-top: 23px;
+  }
   .footer__social-links {
     margin-left: 40px;
     margin-bottom: 25px;
   }
+  .footer__social-network {
+    margin-top: -30px;
+  }
+  .footer__contact-details {
+    margin-top: 15px;
+  }
+  .footer__text {
+    margin-bottom: 30px;
+    margin-top: 23px;
+  }
   .footer-paragraph {
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: -2px;
   }
   .modal__dialog {
     height: 487px;
@@ -1214,7 +1228,6 @@ body {
   .footer__disclaimer {
     display: flex;
     justify-content: space-between;
-    margin-left: 80px;
   }
   .footer__disclaimer-links {
     width: 283px;
@@ -1227,6 +1240,9 @@ body {
   }
   .footer-wrapper {
     margin-bottom: 65px;
+  }
+  .footer__legal {
+    grid-column: 5;
   }
   .footer-paragraph {
     margin: 0;
@@ -1247,11 +1263,9 @@ body {
     margin-top: 22px;
     width: 542px;
   }
-  .footer__disclaimer {
-    margin-left: 56px;
-  }
   .footer__disclaimer-image {
-    margin-right: 29px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .footer__text {
     font-size: 14px;
@@ -1434,7 +1448,6 @@ body {
   }
   .footer__disclaimer-links {
     width: 283px;
-    margin-right: 10px;
   }
   .footer__disclaimer-image {
     width: 136px;
@@ -1531,6 +1544,9 @@ body {
   }
   .footer__title--inline {
     margin: 0px 43px 0 0px;
+  }
+  .footer__disclaimer-links {
+    margin-bottom: 10px;
   }
   .modal__dialog {
     overflow: scroll;
@@ -1753,6 +1769,12 @@ body {
   }
   .footer__social-links {
     display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .footer__link {
+    margin-right: 10px;
   }
   .footer__legal {
     grid-row: 3;
@@ -1765,6 +1787,7 @@ body {
   }
   .footer__title--inline {
     margin-left: 0;
+    margin-bottom: 20px;
   }
   .footer__title--mb-3 {
     margin-bottom: 35px;
