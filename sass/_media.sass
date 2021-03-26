@@ -310,6 +310,14 @@
 			&-image
 				width: 136px
 				margin-right: 135px
+	.modal
+		&-wrapper
+			flex-direction: column
+			align-items: flex-start
+		&__button
+			margin-bottom: 10px
+		&__info
+			display: block
 @media (max-width: 576px)
 	.logo
 		max-width: 99px
@@ -373,7 +381,18 @@
 		&__title
 			&--imnline
 				margin: 0px 43px 0 0px;
-
+@media (orientation: landscape)
+	.modal
+		&__overlay
+		&__dialog
+			top: 5%
+			right: 10%
+			bottom: 5%
+			left: 10%
+			transform: translate(0, 0)
+			overflow-y: scroll
+		&__title
+			font-size: 14px
 @media (max-width: 500px)
 	.navbar
 		&__search
@@ -386,18 +405,23 @@
 				&-form
 					width: 100%
 	.modal
+		&__overlay
 		&__dialog
-			top: 0
-			left: 0
-			right: 0
-			bottom: 0
+			top: 5%
+			right: 10%
+			bottom: 5%
+			left: 10%
 			transform: translate(0, 0)
-		&__form
+			overflow-y: scroll
+		&__title
+			font-size: 14px
 @media (max-width: 450px)	
 	.card
 		height: auto
 		&__button
 			font-size: 10px
+	.phone-span
+		display: block
 @media (max-width: 320px)
 	.container
 		max-width: 280px

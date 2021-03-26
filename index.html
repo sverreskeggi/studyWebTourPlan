@@ -650,9 +650,9 @@
                   <img class="footer__icon" src="./img/footer-call-icon.svg" alt="Icon: phone call">
                 </div>
                 <div class="footer__item-wrapper">
-                  <p class="footer-paragraph">Tel (business hours) : <a class="phone-link" href="tel:269 1500"><wbr>269 1500<wbr></a></p>
-                  <p class="footer-paragraph">Tel (hotline) Monday - Saturday: <a class="phone-link" href="52-56-61-38"><wbr>52-56-61-38<wbr></a> (08:00 am – 20:00 pm)</p>
-                  <p class="footer-paragraph">Tel (hotline) Sunday: <a class="phone-link" href="52-56-61-38"><wbr>52-56-61-38<wbr></a> (08:00 am – 14:00 pm)</p>
+                  <p class="footer-paragraph">Tel (business hours) : <a class="phone-link" href="tel:269 1500">269 1500</a></p>
+                  <p class="footer-paragraph">Tel (hotline) Monday - Saturday: <a class="phone-link" href="52-56-61-38"><span class="phone-span">52-56-61-38 (08:00 am – 20:00 pm)</span></a></p>
+                  <p class="footer-paragraph">Tel (hotline) Sunday: <a class="phone-link" href="52-56-61-38">52-56-61-38</a><span class="phone-span"> (08:00 am – 14:00 pm)</span></p>
                 </div>
               </li>
               <li class="footer__item footer__item--mb-18">
@@ -689,7 +689,7 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
-    <div class="modal" id="rating-modal">
+    <div class="modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
@@ -702,8 +702,10 @@
           <input name="phone" type="text" class="input modal__input" placeholder="Phone Number*">
           <input name="email" type="text" class="input modal__input" placeholder="Email*">
           <textarea name="message" class="message modal__message" cols="30" rows="10" placeholder="Message"></textarea>
-          <button class="button modal__button">Send</button>
-          <span class="modal__info">* Required Fields</span>
+          <div class="modal-wrapper">
+            <button class="button modal__button">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
         </form>
       </div>
       <!-- /.modal__dialog -->
@@ -722,8 +724,10 @@
           <input name="phone" type="text" class="input modal__input" placeholder="Phone Number*">
           <input name="email" type="text" class="input modal__input" placeholder="Email*">
           <textarea name="message" class="message modal__message" cols="30" rows="10" placeholder="Message"></textarea>
-          <button class="button modal__button">Send</button>
-          <span class="modal__info">* Required Fields</span>
+          <div class="modal-wrapper">
+            <button class="button modal__button">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
         </form>
       </div>
       <!-- /.modal__dialog -->

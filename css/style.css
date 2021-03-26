@@ -954,7 +954,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 33px 0px;
+  padding: 30px 0px;
   background-color: #0A223D;
   color: #ffffff;
   border-radius: 8px;
@@ -982,6 +982,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
+  margin-top: 0;
   margin-bottom: 15px;
   text-transform: uppercase;
   text-align: center;
@@ -1004,6 +1005,12 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+.modal-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .send-message-status {
@@ -1421,6 +1428,16 @@ body {
     width: 136px;
     margin-right: 135px;
   }
+  .modal-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .modal__button {
+    margin-bottom: 10px;
+  }
+  .modal__info {
+    display: block;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1505,6 +1522,20 @@ body {
   }
 }
 
+@media (orientation: landscape) {
+  .modal__dialog {
+    top: 5%;
+    right: 10%;
+    bottom: 5%;
+    left: 10%;
+    transform: translate(0, 0);
+    overflow-y: scroll;
+  }
+  .modal__title {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 500px) {
   .navbar__search {
     width: 300px;
@@ -1516,11 +1547,15 @@ body {
     width: 100%;
   }
   .modal__dialog {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 5%;
+    right: 10%;
+    bottom: 5%;
+    left: 10%;
     transform: translate(0, 0);
+    overflow-y: scroll;
+  }
+  .modal__title {
+    font-size: 14px;
   }
 }
 
@@ -1530,6 +1565,9 @@ body {
   }
   .card__button {
     font-size: 10px;
+  }
+  .phone-span {
+    display: block;
   }
 }
 
