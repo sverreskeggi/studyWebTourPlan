@@ -1061,6 +1061,7 @@ body {
     margin-bottom: 5px;
   }
   .modal__dialog {
+    width: 80%;
     overflow-y: scroll;
   }
 }
@@ -1524,6 +1525,10 @@ body {
   }
   .footer__title--inline {
     margin: 0px 43px 0 0px;
+  }
+  .modal__dialog {
+    overflow: scroll;
+    height: 90%;
   }
 }
 
