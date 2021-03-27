@@ -24,7 +24,7 @@
 			// margin-right: 125px
 	.modal
 		&__dialog
-			overflow-y: scroll
+			overflow-y: auto
 @media (max-width: 1200px)
 	.container
 		max-width: 960px
@@ -38,6 +38,8 @@
 	.footer
 		&__input
 			flex-basis: 100%
+		&-wrapper
+			grid-template-columns: 170px 170px 288px;
 @media (max-width: 992px)
 	.logo
 		max-width: 132px
@@ -119,7 +121,7 @@
 				align-self: center
 		&__categories
 			grid-row: 2 / 3
-			grid-column: span 2
+			grid-column: 1
 		&__legal
 			grid-column: span 2
 		&__additional
@@ -142,7 +144,6 @@
 				width: 136px
 				height: 22px
 				margin-right: 166px
-	.footer
 		&-wrapper
 			margin-bottom: 65px
 		&-paragraph
@@ -411,9 +412,10 @@
 		&__overlay
 		&__dialog
 			top: 5%
-			right: 10%
-			bottom: 5%
-			left: 10%
+			right: 5%
+			left: 5%
+			width: 90%
+			max-height: 90%
 			transform: translate(0, 0)
 			overflow-y: scroll
 		&__title
@@ -425,6 +427,12 @@
 			font-size: 10px
 	.phone-span
 		display: block
+	.modal
+		&__dialog
+			width: 90%
+			padding: 0 25px
+		&__form
+			width: 240px
 @media (max-width: 320px)
 	.container
 		max-width: 280px
@@ -519,6 +527,8 @@
 			font-size: 12px
 	.footer
 		padding-bottom: 21px
+		&__message
+			margin-bottom: 0
 		&-wrapper
 			grid-row-gap: 35px
 			margin-bottom: 30px
