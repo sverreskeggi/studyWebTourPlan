@@ -104,6 +104,9 @@ const modalOpen = $('[data-toggle=modal]');
         phone: {
           minlength: '16',
         },
+        email: {
+          email: true,
+        },
       },
     });
   });

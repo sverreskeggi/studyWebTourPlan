@@ -898,6 +898,7 @@ body {
 
 .footer__input {
   width: 100%;
+  color: #333333;
 }
 
 .footer__input-group {
@@ -975,7 +976,7 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .modal__dialog--visible {
@@ -1005,6 +1006,7 @@ body {
 .modal__input {
   width: 100%;
   margin-top: 15px;
+  color: #333333;
 }
 
 .modal__message {
@@ -1560,7 +1562,7 @@ body {
     bottom: 5%;
     left: 10%;
     transform: translate(0, 0);
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   .modal__title {
     font-size: 14px;
@@ -1587,7 +1589,7 @@ body {
     width: 90%;
     max-height: 90%;
     transform: translate(0, 0);
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   .modal__title {
     font-size: 14px;
