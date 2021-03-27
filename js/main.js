@@ -62,20 +62,24 @@ const modalOpen = $('[data-toggle=modal]');
   };
 
   // validate
-  $('#feedbackForm').validate({
-    errorClass: 'invalid',
-    messages: {
-      name: {
-        required: "Please specify your name",
-        minlength :'name not short two symbols',
-      },
-      phone: "Please specify your phone",
-      email: {
-        required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com"
+  $('.form').each(function(){
+    $(this).validate({
+      errorClass: 'invalid',
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength :'name not short two symbols',
+        },
+        phone: "Please specify your phone",
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        }
       }
-    }
-  });
+    });
+  })
+
+  $('[name=phone]').mask('+0(000) 000-0000');
 
   modalOpen.on('click', openModal);
   modalClose.on('click', closeModal);

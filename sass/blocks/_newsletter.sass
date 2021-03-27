@@ -39,11 +39,13 @@
       text-transform: uppercase
 .subscribe
   display: flex
+  flex-wrap: wrap
   width: 355px
   min-height: 55px
   border-radius: 4px 0 0 4px
   overflow: hidden
   &__input
+    order: -2
     padding: 0
     width: 285px
     border: none
@@ -54,6 +56,7 @@
     line-height: 18px
     outline: none
   &__button
+    order: -1
     padding: 0
     width: 65px
     right: 0

@@ -22,6 +22,10 @@
 			margin-bottom: 5px
 		&__disclaimer
 			// margin-right: 125px
+	.subscribe
+		&__input
+			height: 55px
+			width: 250px
 	.modal
 		&__dialog
 			overflow-y: auto
@@ -32,6 +36,10 @@
 		margin-bottom: 70px
 	.slider
 		width: 590px
+	.subscribe
+		&__input
+			height: 55px
+			width: 255px
 	.card
 		width: 230px
 		height: 230px
@@ -339,13 +347,16 @@
 			margin-bottom: 20px
 			height: 250px
 	.newsletter
-		padding: 76px 0 83px 0
+		&-form
+			width: 320px
+			padding: 76px 0 83px 0
 		&__title
 			margin-bottom: 37px
 	.subscribe
-		width: 280px
+		// width: 280px
 		&__input
-			min-width: 215px
+			min-width: 187px
+			width: 190px
 		&__button
 			min-width: 65px
 	.card
@@ -408,6 +419,9 @@
 		&__contact
 				&-form
 					width: 100%
+	.newsletter
+		&-form
+			width: 100%
 	.modal
 		&__overlay
 		&__dialog
@@ -481,6 +495,7 @@
 		width: 100%
 		&__input
 			padding-left: 20px
+			width: 195px
 	.reviews
 		margin-bottom: 50px
 		&__title
@@ -527,6 +542,10 @@
 			font-size: 12px
 	.footer
 		padding-bottom: 21px
+	.subscribe
+		&__input
+			&-group
+				flex-basis: 100%
 		&__message
 			margin-bottom: 0
 		&-wrapper
@@ -538,14 +557,12 @@
 			&-form
 				flex-direction: column
 				width: 280px
-		&__input
-			order: -1
 		&__info
 			order: 0
 			flex-basis: 100%
 			margin-bottom: 15px
 		&__button
-			order: 1
+			order: -1
 		&__disclaimer
 			flex-wrap: wrap
 			margin-bottom: 30px

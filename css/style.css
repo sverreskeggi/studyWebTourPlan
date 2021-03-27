@@ -534,6 +534,7 @@ body {
 
 .subscribe {
   display: flex;
+  flex-wrap: wrap;
   width: 355px;
   min-height: 55px;
   border-radius: 4px 0 0 4px;
@@ -541,6 +542,7 @@ body {
 }
 
 .subscribe__input {
+  order: -2;
   padding: 0;
   width: 285px;
   border: none;
@@ -553,6 +555,7 @@ body {
 }
 
 .subscribe__button {
+  order: -1;
   padding: 0;
   width: 65px;
   right: 0;
@@ -890,6 +893,10 @@ body {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   flex-basis: 47%;
 }
@@ -1065,6 +1072,10 @@ body {
     margin-top: 0;
     margin-bottom: 5px;
   }
+  .subscribe__input {
+    height: 55px;
+    width: 250px;
+  }
   .modal__dialog {
     overflow-y: auto;
   }
@@ -1079,6 +1090,10 @@ body {
   }
   .slider {
     width: 590px;
+  }
+  .subscribe__input {
+    height: 55px;
+    width: 255px;
   }
   .card {
     width: 230px;
@@ -1473,17 +1488,16 @@ body {
     margin-bottom: 20px;
     height: 250px;
   }
-  .newsletter {
+  .newsletter-form {
+    width: 320px;
     padding: 76px 0 83px 0;
   }
   .newsletter__title {
     margin-bottom: 37px;
   }
-  .subscribe {
-    width: 280px;
-  }
   .subscribe__input {
-    min-width: 215px;
+    min-width: 187px;
+    width: 190px;
   }
   .subscribe__button {
     min-width: 65px;
@@ -1557,6 +1571,9 @@ body {
     max-width: 140px;
   }
   .footer__contact-form {
+    width: 100%;
+  }
+  .newsletter-form {
     width: 100%;
   }
   .modal__dialog {
@@ -1653,6 +1670,7 @@ body {
   }
   .subscribe__input {
     padding-left: 20px;
+    width: 195px;
   }
   .reviews {
     margin-bottom: 50px;
@@ -1711,73 +1729,73 @@ body {
   .footer {
     padding-bottom: 21px;
   }
-  .footer__message {
+  .subscribe__input-group {
+    flex-basis: 100%;
+  }
+  .subscribe__message {
     margin-bottom: 0;
   }
-  .footer-wrapper {
+  .subscribe-wrapper {
     grid-row-gap: 35px;
     margin-bottom: 30px;
   }
-  .footer__contact-details {
+  .subscribe__contact-details {
     margin-top: 0;
   }
-  .footer__contact-form {
+  .subscribe__contact-form {
     flex-direction: column;
     width: 280px;
   }
-  .footer__input {
-    order: -1;
-  }
-  .footer__info {
+  .subscribe__info {
     order: 0;
     flex-basis: 100%;
     margin-bottom: 15px;
   }
-  .footer__button {
-    order: 1;
+  .subscribe__button {
+    order: -1;
   }
-  .footer__disclaimer {
+  .subscribe__disclaimer {
     flex-wrap: wrap;
     margin-bottom: 30px;
     margin-left: 21px;
   }
-  .footer__disclaimer-links {
+  .subscribe__disclaimer-links {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
   }
-  .footer__disclaimer-image {
+  .subscribe__disclaimer-image {
     width: 136px;
     height: 22px;
   }
-  .footer__logo {
+  .subscribe__logo {
     height: 108px;
     margin-top: 0px;
   }
-  .footer__social-network {
+  .subscribe__social-network {
     margin-top: 0;
     display: flex;
     flex-direction: column;
   }
-  .footer__social-links {
+  .subscribe__social-links {
     display: block;
   }
-  .footer__legal {
+  .subscribe__legal {
     grid-row: 3;
   }
-  .footer__additional {
+  .subscribe__additional {
     grid-row: 4;
   }
-  .footer__categories {
+  .subscribe__categories {
     grid-row: 5;
   }
-  .footer__title--inline {
+  .subscribe__title--inline {
     margin-left: 0;
   }
-  .footer__title--mb-3 {
+  .subscribe__title--mb-3 {
     margin-bottom: 35px;
   }
-  .footer__title--mb-37 {
+  .subscribe__title--mb-37 {
     margin-bottom: 6px;
   }
 }
