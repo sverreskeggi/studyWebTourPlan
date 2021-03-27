@@ -83,4 +83,6 @@ const modalOpen = $('[data-toggle=modal]');
 
   modalOpen.on('click', openModal);
   modalClose.on('click', closeModal);
+
+  AOS.init();
 });

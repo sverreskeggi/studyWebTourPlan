@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/aos.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
@@ -62,7 +63,7 @@
         <!-- /.navbar-top -->
       </div>
       <!-- /.container -->
-      <div class="navbar-bottom">
+      <div class="navbar-bottom" data-aos="flip-up">
         <div class="container">
           <nav>
             <ul class="navbar-menu">
@@ -167,7 +168,7 @@
         <!-- /.hotel-info -->
         <div class="hotel-grid">
           <!-- Slider main container -->
-          <div class="swiper-container hotel-slider hotel__slider">
+          <div class="swiper-container hotel-slider hotel__slider" data-aos="fade-right">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -221,7 +222,7 @@
           </div>
           <!-- /.swiper-container -->
           <div class="hotel-right">
-            <div class="booking">
+            <div class="booking" data-aos="fade-left">
               <div class="booking__info">
                 <div class="booking__price">
                   <span class="booking__start">prcie starts as</span>
@@ -261,7 +262,7 @@
               <button data-href="booking-modal" data-toggle="modal" class="button booking__button button-modal">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map">
+            <div class="map" data-aos="fade-left">
               <iframe
                 class="map__frame"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d731.6952820224184!2d-21.889675876456817!3d64.13966865680644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d674b8cad6d071%3A0x9190a662ce80e764!2sHilton%20Reykjavik%20Nordica!5e0!3m2!1sru!2sru!4v1615843860219!5m2!1sru!2sru"
@@ -497,7 +498,7 @@
     <section class="activities">
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
-        <div class="activities-wrapper">
+        <div class="activities-wrapper" data-aos="flip-left">
           <div class="card activities__card">
             <img
               src="./img/activities-1.png"
@@ -742,6 +743,7 @@
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
