@@ -96,11 +96,33 @@ const modalOpen = $('[data-toggle=modal]');
           required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com"
         }
-      }
+      },
+      rules: {
+        name: {
+          minlength: '2',
+        },
+        phone: {
+          minlength: '16',
+        },
+      },
     });
-  })
+  });
 
   $('[name=phone]').mask('+0(000) 000-0000');
+
+  // $('[name=phone]').on('change', function(e){
+  //     $(e.target).validate({
+  //     errorClass: 'invalid',
+  //     messages: {
+  //       phone: "Please specify your phone",
+  //     },
+  //     rules: {
+  //       phone: {
+  //         min: '16',
+  //       }
+  //     }
+  //   });
+  // });
 
   modalOpen.on('click', openModal);
   modalClose.on('click', closeModal);
