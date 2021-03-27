@@ -697,7 +697,7 @@
           <img src="./img/modal-close-icon.svg" alt="Icon: close modal window" srcset="">
         </a>
         <form name="modal-form" action="./php/send.php" method="POST" class="modal__form">
-          <h3 class="modal__title">Booking</h3>
+          <h3 class=" ">Booking</h3>
           <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*">
           <input name="phone" type="text" class="input modal__input" placeholder="Phone Number*">
           <input name="email" type="text" class="input modal__input" placeholder="Email*">
@@ -718,12 +718,12 @@
         <a href="#" class="modal__close">
           <img src="./img/modal-close-icon.svg" alt="Icon: close modal window" srcset="">
         </a>
-        <form name="modal-form" action="./php/send.php" method="POST" class="modal__form">
+        <form name="modal-form" id="feedbackForm" action="./php/send.php" method="POST" class="modal__form">
           <h3 class="modal__title">Send us a feedback</h3>
-          <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*">
-          <input name="phone" type="text" class="input modal__input" placeholder="Phone Number*">
-          <input name="email" type="text" class="input modal__input" placeholder="Email*">
-          <textarea name="message" class="message modal__message" cols="30" rows="10" placeholder="Message"></textarea>
+          <input name="name" type="name" class="input modal__input" placeholder="Your Full Name*" required="" minlength="2">
+          <input name="phone" type="phone" class="input modal__input" placeholder="Phone Number*" required="">
+          <input name="email" type="email" class="input modal__input" placeholder="Email*" required="">
+          <textarea name="message" type="message" class="message modal__message" cols="30" rows="10" placeholder="Message"></textarea>
           <div class="modal-wrapper">
             <button class="button modal__button">Send</button>
             <span class="modal__info">* Required Fields</span>
@@ -735,6 +735,7 @@
     <!-- /.modal -->
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
