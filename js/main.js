@@ -110,20 +110,6 @@ const modalOpen = $('[data-toggle=modal]');
 
   $('[name=phone]').mask('+0(000) 000-0000');
 
-  // $('[name=phone]').on('change', function(e){
-  //     $(e.target).validate({
-  //     errorClass: 'invalid',
-  //     messages: {
-  //       phone: "Please specify your phone",
-  //     },
-  //     rules: {
-  //       phone: {
-  //         min: '16',
-  //       }
-  //     }
-  //   });
-  // });
-
   modalOpen.on('click', openModal);
   modalClose.on('click', closeModal);
 
