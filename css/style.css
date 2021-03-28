@@ -1696,6 +1696,9 @@ body {
   .swiper-container {
     height: 100%;
   }
+  .swiper-slide {
+    height: auto;
+  }
   .map {
     height: 172px;
   }
