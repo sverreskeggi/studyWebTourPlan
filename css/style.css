@@ -97,6 +97,17 @@ body {
   width: 100%;
 }
 
+.active-link {
+  color: #ffffff !important;
+  cursor: pointer !important;
+  border-bottom: 1px solid #ffffff;
+}
+
+.active-button {
+  background-color: #333333 !important;
+  cursor: pointer !important;
+}
+
 .navbar {
   background-color: #ffffff;
 }

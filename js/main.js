@@ -116,5 +116,23 @@ const modalOpen = $('[data-toggle=modal]');
   modalOpen.on('click', openModal);
   modalClose.on('click', closeModal);
 
+  let winSize = window.screen.width;
+  window.addEventListener('resize', function(event){
+    winSize = window.screen.width;
+  });
+
+  $('a').mouseover(function() {
+    winSize > 992 ? $(this).addClass('active-link') : false;
+  });
+  $('button').mouseover(function() {
+    winSize > 992 ? $(this).addClass('active-button') : false;
+  });
+  $('a').mouseleave(function() {
+    $(this).removeClass('active-link');
+  });
+  $('button').mouseleave(function() {
+    $(this).removeClass('active-button');
+  });
+
   AOS.init();
 });
