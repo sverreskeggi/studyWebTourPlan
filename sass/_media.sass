@@ -51,6 +51,7 @@
 			flex-basis: 100%
 		&-wrapper
 			grid-template-columns: 170px 170px 288px;
+			grid-auto-rows: minmax(20px, min-content);
 		&__social
 			&-network
 				margin-top: -20px
@@ -455,6 +456,8 @@
 		&__form
 			width: 240px
 @media (max-width: 320px)
+	body
+		overflow-x: hidden
 	.container
 		max-width: 280px
 		margin: auto
@@ -475,6 +478,9 @@
 	.logo
 		height: 14px
 	.hotel
+		margin-bottom: 40px
+		&-right
+			min-height: 402px
 		&-info
 			&__name
 				margin-top: 10px !important
@@ -549,7 +555,6 @@
 			font-size: 12px
 	.footer
 		padding-bottom: 21px
-	.subscribe
 		&__input
 			&-group
 				flex-basis: 100%
@@ -569,7 +574,7 @@
 			flex-basis: 100%
 			margin-bottom: 15px
 		&__button
-			order: -1
+			order: 1
 		&__disclaimer
 			flex-wrap: wrap
 			margin-bottom: 30px

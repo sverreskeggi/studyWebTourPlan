@@ -1133,6 +1133,7 @@ body {
   }
   .footer-wrapper {
     grid-template-columns: 170px 170px 288px;
+    grid-auto-rows: minmax(20px, min-content);
   }
   .footer__social-network {
     margin-top: -20px;
@@ -1645,6 +1646,9 @@ body {
 }
 
 @media (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
   .container {
     max-width: 280px;
     margin: auto;
@@ -1668,6 +1672,12 @@ body {
   }
   .logo {
     height: 14px;
+  }
+  .hotel {
+    margin-bottom: 40px;
+  }
+  .hotel-right {
+    min-height: 402px;
   }
   .hotel-info__name {
     margin-top: 10px !important;
@@ -1764,73 +1774,73 @@ body {
   .footer {
     padding-bottom: 21px;
   }
-  .subscribe__input-group {
+  .footer__input-group {
     flex-basis: 100%;
   }
-  .subscribe__message {
+  .footer__message {
     margin-bottom: 0;
   }
-  .subscribe-wrapper {
+  .footer-wrapper {
     grid-row-gap: 35px;
     margin-bottom: 30px;
   }
-  .subscribe__contact-details {
+  .footer__contact-details {
     margin-top: 0;
   }
-  .subscribe__contact-form {
+  .footer__contact-form {
     flex-direction: column;
     width: 280px;
   }
-  .subscribe__info {
+  .footer__info {
     order: 0;
     flex-basis: 100%;
     margin-bottom: 15px;
   }
-  .subscribe__button {
-    order: -1;
+  .footer__button {
+    order: 1;
   }
-  .subscribe__disclaimer {
+  .footer__disclaimer {
     flex-wrap: wrap;
     margin-bottom: 30px;
     margin-left: 21px;
   }
-  .subscribe__disclaimer-links {
+  .footer__disclaimer-links {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
   }
-  .subscribe__disclaimer-image {
+  .footer__disclaimer-image {
     width: 136px;
     height: 22px;
   }
-  .subscribe__logo {
+  .footer__logo {
     height: 108px;
     margin-top: 0px;
   }
-  .subscribe__social-network {
+  .footer__social-network {
     margin-top: 0;
     display: flex;
     flex-direction: column;
   }
-  .subscribe__social-links {
+  .footer__social-links {
     display: block;
   }
-  .subscribe__legal {
+  .footer__legal {
     grid-row: 3;
   }
-  .subscribe__additional {
+  .footer__additional {
     grid-row: 4;
   }
-  .subscribe__categories {
+  .footer__categories {
     grid-row: 5;
   }
-  .subscribe__title--inline {
+  .footer__title--inline {
     margin-left: 0;
   }
-  .subscribe__title--mb-3 {
+  .footer__title--mb-3 {
     margin-bottom: 35px;
   }
-  .subscribe__title--mb-37 {
+  .footer__title--mb-37 {
     margin-bottom: 6px;
   }
 }
