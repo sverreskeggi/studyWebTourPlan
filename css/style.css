@@ -1587,6 +1587,7 @@ body {
 
 @media (max-width: 570px) and (orientation: landscape) {
   .modal__dialog {
+    height: 290px;
     top: 5%;
     right: 10%;
     bottom: 5%;
@@ -1701,6 +1702,9 @@ body {
   .booking {
     margin-bottom: 20px;
   }
+  .newsletter {
+    padding: 76px 0 87px 0;
+  }
   .newsletter-wrapper {
     width: 280px;
   }
@@ -1728,6 +1732,7 @@ body {
   }
   .reviews-slider__text {
     text-align: left;
+    height: 266px;
   }
   .reviews-slider__item {
     padding-bottom: 36px;
@@ -1833,6 +1838,9 @@ body {
   }
   .footer__categories {
     grid-row: 5;
+  }
+  .footer__title {
+    margin-bottom: 20px;
   }
   .footer__title--inline {
     margin-left: 0;
